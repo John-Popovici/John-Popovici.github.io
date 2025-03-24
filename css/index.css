@@ -1,0 +1,39 @@
+/* John Popovici 2025-03 */
+
+* {font-family: "Roboto Mono"; font-size: 14px; box-sizing: border-box;}
+        
+body {overflow-x: hidden;}
+.block-center {max-width: 91ch; margin: auto;}
+.centered {text-align: center;}
+
+p {margin: 0; white-space: pre-wrap;}
+
+.a {text-decoration: none; color: #000000; background-color: #EEEEEE; cursor: pointer;}
+.a:hover {background-color: #BBBBBB;}
+
+.bold {font-weight: bold;}
+.bolder {font-weight: bolder;}
+.blue {color: #4472C4;}
+
+.hidden {display: none;}
+.highlight {background-color: #eaeaf8;}
+
+span {display: inline-block;}
+
+.two-col {display: flex; white-space: nowrap;}
+.spacer {flex-grow: 1;}
+
+.section {padding: 5px; border-radius: 5px;}
+
+@media (max-width: 870px) {
+    * {font-size: 1.70vw;}
+}
+
+.large-screen {display: inline;}
+.medium-screen {display: none;}
+.small-screen {display: none;}
+@media (max-width: 1000px) {
+    .large-screen {display: none;}
+    .medium-screen {display: inline;}
+    .small-screen {display: none;}
+}
