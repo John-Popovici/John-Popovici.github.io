@@ -1,6 +1,6 @@
 /* John Popovici 2025-03 */
 
-* {font-family: "Roboto Mono"; font-size: 14px; box-sizing: border-box;}
+* {font-family: "Roboto Mono", 'Courier New', Courier, monospace ; font-size: 14px; box-sizing: border-box;}
         
 body {overflow-x: hidden;}
 .block-center {max-width: 91ch; margin: auto;}
