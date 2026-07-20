@@ -1,9 +1,9 @@
-/* John Popovici 2025-03 */
+/* John Popovici */
 
-* {font-family: "Roboto Mono", 'Courier New', Courier, monospace ; font-size: 14px; box-sizing: border-box;}
-        
-body {overflow-x: hidden;}
-.block-center {max-width: 91ch; margin: auto;}
+* {font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; box-sizing: border-box;}
+
+body {overflow-x: hidden; font-size: 14px;}
+.block-center {max-width: 780px; margin: auto; padding: 0 16px;}
 .centered {text-align: center;}
 
 p {margin: 0; white-space: pre-wrap;}
@@ -13,6 +13,8 @@ p {margin: 0; white-space: pre-wrap;}
 
 .bold {font-weight: bold;}
 .bolder {font-weight: bolder;}
+.italic {font-style: italic;}
+.small {font-size: 0.8em;}
 .blue {color: #4472C4;}
 
 .hidden {display: none;}
@@ -20,19 +22,78 @@ p {margin: 0; white-space: pre-wrap;}
 
 span {display: inline-block;}
 
+.nav {padding: 0.2em 0.5em;}
+
 .two-col {display: flex; white-space: nowrap;}
 .spacer {flex-grow: 1;}
 
-.section {padding: 5px; border-radius: 5px;}
+/* Section */
+.section {padding: 5px; border-radius: 5px; margin-bottom: 5px;}
+.section-title {
+    font-variant: small-caps;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 1px solid black;
+    margin-bottom: 8px;
+    padding-bottom: 2px;
+}
+.section-title .a {padding: 0em 0.5em;}
 
-@media (max-width: 870px) {
-    * {font-size: 1.70vw;}
+/* Entry under a section */
+.entry {margin-bottom: 10px;}
+.entry > p:not(.two-col) {margin-left: 2em;}
+.heading-block {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.heading-rows {
+    flex: 1;
+    min-width: 0;
+}
+.heading-bullet {
+    width: 2em;
+    text-align: center;
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+/* Sub-bullet Row under an entry */
+.sub-bullet {
+    position: relative;
+    padding-left: 2.5ch;
+}
+.sub-bullet::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+}
+.sub-bullet * {display: inline;}
+
+/* Skill rows */
+.skill {
+    display: flex;
+    width: 100%;
+    gap: 1ch;
+}
+.skill .label {
+    flex: 0 0 16ch;
+    font-weight: bold;
+}
+
+.ascii-art {
+    font-family: monospace;
+    font-size: 0.8em;
+    white-space: pre;
 }
 
 .large-screen {display: inline;}
 .medium-screen {display: none;}
 .small-screen {display: none;}
-@media (max-width: 1000px) {
+
+@media (max-width: 850px) {
+    body {font-size: clamp(9px, 1.70vw, 14px);}
     .large-screen {display: none;}
     .medium-screen {display: inline;}
     .small-screen {display: none;}

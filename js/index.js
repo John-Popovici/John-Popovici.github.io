@@ -1,4 +1,4 @@
-// John Popovici 2025-03
+// John Popovici
 
 document.addEventListener("click", function (event) {
     // Remove highlights if clicking

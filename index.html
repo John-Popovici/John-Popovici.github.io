@@ -1,4 +1,4 @@
-<!-- John Popovici 2025-03 -->
+<!-- John Popovici -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,14 +6,13 @@
     <title>John Popovici's Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js"></script> 
+    <script src="js/index.js"></script>
 </head>
 
 <body>
     <header class="centered">
-        <p aria-label="John Popovici" class="large-screen">
+        <p aria-label="John Popovici" class="large-screen ascii-art">
  `888888         `888                    `8888888b.                                      d8b          d8b 
     "88b          888                     888   Y88b                                     Y8P          Y8P 
      888          888                     888    888                                                      
@@ -26,7 +25,7 @@
  .d88P"                                                       888                                         
 888P"                                                         888                                         
         </p>
-        <p aria-label="John P." class="medium-screen">
+        <p aria-label="John P." class="medium-screen ascii-art">
  `888888         `888                    `8888888b. 
     "88b          888                     888   Y88b
      888          888                     888    888
@@ -40,296 +39,483 @@
 888P"                                               
         </p>
         <nav>
-            |<a class="a" href="#001" onclick="highlightSection('001')"> Professional Summary </a>
-            |<a class="a" href="#002" onclick="highlightSection('002')"> Education </a>
-            |<a class="a" href="#003" onclick="highlightSection('003')"> Work Experience </a>
-            |<a class="a" href="#004" onclick="highlightSection('004')"> Projects </a>
-            |<a class="a" href="#005" onclick="highlightSection('005')"> Other Highlights </a>
+            <!-- |<a class="a" href="#001" onclick="highlightSection('001')"> Professional Summary </a> -->
+            |<a class="nav a" href="#002" onclick="highlightSection('002')"> Education </a>
+            |<a class="nav a" href="#003" onclick="highlightSection('003')"> Work Experience </a>
+            |<a class="nav a" href="#004" onclick="highlightSection('004')"> Projects </a>
+            |<a class="nav a" href="#005" onclick="highlightSection('005')"> Other Highlights </a>
+            |<a class="nav a" href="#006" onclick="highlightSection('006')"> Skills </a>
             |
         </nav>
     </header>
 
     <br />
-    <br />
 
     <div id="000" class="block-center section">
         <p class="two-col">
-            <a class="a" href="files/John Popovici Resume.pdf" target="_blank">[Resume]</a>
+            <a class="a" href="files/resume/John_Popovici_Resume.pdf" target="_blank">[ PDF Resume/CV ]</a>
             <span class="spacer"></span>
-            <a href="mailto:john_DOT_pop@hotmail_DOT_com">john_DOT_pop@hotmail_DOT_com</a>
-        </p>
-        <p class="two-col">
-            <span></span>
-            <span class="spacer"></span>
-            <a href="https://github.com/John-Popovici" target="_blank">github.com/john-popovici</a>
+            <a href="mailto:john[dot]pop@hotmail[dot]com">john[dot]pop@hotmail[dot]com</a>
         </p>
         <p class="two-col">
             <span></span>
             <span class="spacer"></span>
             <a href="https://www.linkedin.com/in/john-popovici/" target="_blank">linkedin.com/in/john-popovici/</a>
         </p>
-        <p></p>
+        <p class="two-col">
+            <span></span>
+            <span class="spacer"></span>
+            <a href="https://github.com/John-Popovici" target="_blank">github.com/John-Popovici</a>
+        </p>
     </div>
-
-    <br />
 
     <div id="001" class="block-center section">
-        <span class="bolder"><p><a class="a" href="#001" onclick="highlightSection('001')">[001]</a> Professional Summary</p></span>
-        <p>-----------------------------------------------------------------------------------------</p>
-        <p>Cybersecurity and Software Engineering master's student with professional industry and academic work experience.</p>
-        <p><span class="bold">Python, Java, NN, Git, Linux, HTML, CSS, JS, Matlab, SQL, C Shell, LaTeX, Figma, Regex</span></p>
+        <!-- <div class="section-title">
+            <a class="a" href="#001" onclick="highlightSection('001')"> Professional Summary </a>
+        </div> -->
+        <p><span class="bold">Cybersecurity and Software Engineering</span> masters student with a background in software development, high-performance automated testing, and machine learning integration. Proven ability to contribute to open-source tools and deliver technical solutions in fast-paced industrial environments and academic settings.</p>
     </div>
-
-    <br />
 
     <div id="002" class="block-center section">
-        <span class="bolder"><p><a class="a" href="#002" onclick="highlightSection('002')">[002]</a> Education</p></span>
-        <p>-----------------------------------------------------------------------------------------</p>
-
-        <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Master in Cybersecurity and Cyber Defence</span> | UofLuxembourg - Luxembourg</span>
-                <span class="spacer"></span>
-                <span>Class of 2027</span>
-            </p>
-            <p>  - ENISA EU Cybersecurity Skills Framework (ECSF)</p>
+        <div class="section-title">
+            <a class="a" href="#002" onclick="highlightSection('002')"> Education </a>
         </div>
 
-        <br />
-        
         <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Bachelor of Software Engineering</span> | McMaster University - Canada</span>
-                <span class="spacer"></span>
-                <span>Class of 2025</span>
-            </p>
-            <p>  - 11.5/12.0 GPA; <span class="bold">Summa Cum Laude</span>; Principal's Award and University Senate Scholarship</p>
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Master in Cybersecurity and Cyber Defence</span></span>
+                    <span class="spacer"></span>
+                    <span>Class of 2027</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">University of Luxembourg - Luxembourg</span>
+                    <span class="spacer"></span>
+                    <span class="italic">18.9 / 20.0 GPA</span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">ENISA EU Cybersecurity Skills Framework (ECSF)</p>
+            <p class="small italic"><span class="bold">Courses:</span> Software Vulnerabilities, Intelligence Structured Analysis, AI and Cybersecurity, Security of Mobiles, Microkernel Based Systems, Cyber Policy, Cybersecurity Risk Management, Cybersecurity Tool for Threat Intelligence and Forensics</p>
         </div>
-        
-        <br />
 
         <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Ontario Secondary School Diploma</span> | Newmarket High School - Canada</span>
-                <span class="spacer"></span>
-                <span>Class of 2019</span>
-            </p>
-            <p>  - 95.5/100.0 GPA; Awarded Principal's Honour Roll and Academic Distinctions</p>
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Bachelor of Software Engineering</span></span>
+                    <span class="spacer"></span>
+                    <span>Class of 2025</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">McMaster University - Canada</span>
+                    <span class="spacer"></span>
+                    <span class="italic">11.5 / 12.0 GPA</span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet"><span class="bold">Summa Cum Laude</span>; Principal's Award and University Senate Scholarship</p>
+            <p class="small italic"><span class="bold">Courses:</span> Software Design, Software Testing, Computer Networks and Security, Scientific Computation, Databases, Computer Architecture, Information Security, Software Requirements and Security Considerations, Data Structures and Algorithms</p>
+        </div>
+
+        <div class="entry">
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Ontario Secondary School Diploma</span></span>
+                    <span class="spacer"></span>
+                    <span>Class of 2019</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">Newmarket High School - Canada</span>
+                    <span class="spacer"></span>
+                    <span class="italic">95.5 / 100.0 GPA</span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">Awarded Principal's Honour Roll and Academic Distinctions</p>
         </div>
 
     </div>
-
-    <br />
 
     <div id="003" class="block-center section">
-        <span class="bolder"><p><a class="a" href="#003" onclick="highlightSection('003')">[003]</a> Work Experience</p></span>
-        <p>-----------------------------------------------------------------------------------------</p>
-
-        <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Project Developer</span> | UofLuxembourg SnT Serval - Luxembourg</span>
-                <span class="spacer"></span>
-                <span>Oct 2025 - Present</span>
-            </p>
-            <p>  - Developed <span class="bold">Python</span> MVP for simple usage of 7 tabular foundational <span class="bold">ML</span> models</p>
-            <p>  - Implemented metrics and plugins for <span class="bold">analysis of AI models</span> for an open-source project</p>
+        <div class="section-title">
+            <a class="a" href="#003" onclick="highlightSection('003')"> Work Experience </a>
         </div>
 
-        <br />
-        
         <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Multimedia Textbook Assistant</span> | McMaster University - Canada</span>
-                <span class="spacer"></span>
-                <span>Jan 2025 - June 2025</span>
-            </p>
-            <p>  - Created and assessed interactive content for open <a href="https://ecampusontario.pressbooks.pub/webdev/" target="_blank">web development course textbook</a></p>
-        </div>
-        
-        <br />
-
-        <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Teaching Assistant</span> | McMaster University - Canada</span>
-                <span class="spacer"></span>
-                <span>Sept 2024 - April 2025</span>
-            </p>
-            <p>  - Facilitated <span class="bold">academic guidance and marking</span> for courses with 1,000+ students</p>
-            <p>  - Covered Engineering Project Design, Data Structures, Algorithms, and Web Dev</p>
-        </div>
-        
-        <br />
-
-        <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Design Verification & Automation Developer</span> | AMD - Canada</span>
-                <span class="spacer"></span>
-                <span>May 2022 - April 2023</span>
-            </p>
-            <p>  - Scripting in <span class="bold">Python, Perl, Ruby, C Shell with Regex</span> to automate and enhance testing</p>
-            <p>  - Maintained and improved power analysis test and sim tools using <span class="bold">Perforce and Jira</span></p>
-            <p>  - Lead on the Intern Steering Committee, organizing and hosting events for 300+</p>
-        </div>
-        
-        <br />
-
-        <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Teaching Assistant</span> | McMaster University - Canada</span>
-                <span class="spacer"></span>
-                <span>Sept 2021 - April 2022</span>
-            </p>
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Project Developer</span></span>
+                    <span class="spacer"></span>
+                    <span>Oct 2025 - Present</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">University of Luxembourg (SnT SerVal) - Luxembourg</span>
+                    <span class="spacer"></span>
+                    <span class="italic"></span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">Enhanced the <a href="https://www.uni.lu/snt-en/news/new-open-source-tool-accelerates-testing-for-trustworthy-artificial-intelligence/" target="_blank"><span class="bold">Open Source AI Assessment Sandbox Configurator (AISC)</span></a> architecture by developing the plugin interface and full stack, improving framework extensibility for third-party developers.</p>
+            <p class="sub-bullet">Implemented an extensible suite of analysis plugins and 100+ metrics for the <a href="https://aifactory.lu/build-and-test/testing-the-solution/ai-sandbox-configurator" target="_blank">AISC tool</a>, for automated evaluation of <span class="bold">AI model Performance, Trustworthiness, Robustness, and more.</span></p>
+            <p class="sub-bullet">Architected Python PoC to facilitate seamless interfacing and simplified usage of seven leading foundational tabular ML models within a customized testing environment.</p>
         </div>
 
-        <br />
+        <div class="entry">
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Multimedia Textbook Assistant</span></span>
+                    <span class="spacer"></span>
+                    <span>Jan 2025 - June 2025</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">McMaster University - Canada</span>
+                    <span class="spacer"></span>
+                    <span class="italic"></span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">Designed and evaluated interactive digital content for an open <a href="https://ecampusontario.pressbooks.pub/webdev/" target="_blank">web development course textbook</a>.</p>
+        </div>
 
         <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Junior Programmer</span> | Valor Distributions - Canada</span>
-                <span class="spacer"></span>
-                <span>May 2021 - Aug 2021</span>
-            </p>
-            <p>  - Developed warehouse/lab management system with <span class="bold">VUE.JS, Laravel, PHP, and SQL DBMS</span></p>
-            <p>  - Quality Assurance (QA) and website development live within the week with <span class="bold">GitHub</span></p>
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Teaching Assistant</span></span>
+                    <span class="spacer"></span>
+                    <span>Sept 2021 - Apr 2025</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">McMaster University - Canada</span>
+                    <span class="spacer"></span>
+                    <span class="italic">*4 Semesters</span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">Provided technical instruction, academic guidance, and grading for courses of 1000+ students.</p>
+            <p class="sub-bullet">Specialized in delivering complex concepts in <span class="bold">Engineering Project Design, Data Structures, Algorithms, and Web Development</span>.</p>
         </div>
-        
-        <br />
 
-        <div class="entry hidden">
-            <p class="two-col">
-                <span>* <span class="bold blue">Shipping Associate</span> | Valor Distributions - Canada</span>
-                <span class="spacer"></span>
-                <span>July 2019 - Aug 2019</span>
-            </p>
+        <div class="entry">
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Design Verification & Automation Developer</span></span>
+                    <span class="spacer"></span>
+                    <span>May 2022 - Apr 2023</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">Advanced Micro Devices (AMD) - Canada</span>
+                    <span class="spacer"></span>
+                    <span class="italic"></span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">Maintained and executed automated testing and simulation suite in <span class="bold">Python, Perl, Ruby, and Bash</span>, utilizing log analysis to identify and debug faults across 6+ parallel execution versions.</p>
+            <p class="sub-bullet">Optimized data ingestion process by developing automation to parse heterogeneous vendor data.</p>
+            <p class="sub-bullet">Managed <span class="bold">Perforce Version Control and Jira Issue Tracking</span> within a production environment.</p>
+            <p class="sub-bullet">Spearheaded the Intern Steering Committee, organizing large-scale $2500 professional development events for 300+ interns. Collaborated with university partners in charity events to raise over $4000.</p>
+        </div>
+
+        <div class="entry">
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Junior Programmer</span></span>
+                    <span class="spacer"></span>
+                    <span>May 2021 - Aug 2021</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">Valor Distributions - Canada</span>
+                    <span class="spacer"></span>
+                    <span class="italic"></span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">Developed and performed Quality Assurance (QA) for an inventory management system utilizing <span class="bold">Vue.js, Laravel, PHP and SQL Databases</span>.</p>
         </div>
 
     </div>
-
-    <br />
 
     <div id="004" class="block-center section">
-        <span class="bolder"><p><a class="a" href="#004" onclick="highlightSection('004')">[004]</a> Software Projects</p></span>
-        <p>-----------------------------------------------------------------------------------------</p>
-        
-        <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Custom Neural Network from Scratch</span> | Personal Project</span>
-                <span class="spacer"></span>
-                <span>Summer 2025</span>
-            </p>
-            <p>  - Developed customizable NN using <span class="bold">Python</span> and <span class="bold">NumPy</span>, evaluated vs <span class="bold">TensorFlow</span>; <a href="https://github.com/John-Popovici/scratch-neural-network?tab=readme-ov-file#custom-neural-network-from-scratch" target="_blank">GitHub</a></p>
-        </div>
-        
-        <br />
-
-        <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Personal Website</span> | Personal Project</span>
-                <span class="spacer"></span>
-                <span>March 2025</span>
-            </p>
-            <p>  - Created website using raw HTML, JavaScript, CSS on GitHub Pages; <a href="https://john-popovici.github.io/" target="_blank">Website</a>; <a href="https://github.com/John-Popovici/John-Popovici.github.io" target="_blank">GitHub</a></p>
-        </div>
-        
-        <br />
-
-        <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Dice Duels</span> | Group Project</span>
-                <span class="spacer"></span>
-                <span>Sept 2024 - April 2025</span>
-            </p>
-            <p>  - Created customizable modernized Yahtzee using <span class="bold">Godot</span> with documentation; <a href="https://github.com/John-Popovici/duel-of-the-eights" target="_blank">GitHub</a></p>
-        </div>
-        
-        <br />
-
-        <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Android Chat App</span> | Group Project</span>
-                <span class="spacer"></span>
-                <span>Winter 2024</span>
-            </p>
-            <p>  - Developed mobile app demo with <span class="bold">Kerberos authentication protocol</span> in <span class="bold">Java</span></p>
-        </div>
-        
-        <br />
-
-        <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Custom Microsoft Office Automation</span> | Commissioned Project</span>
-                <span class="spacer"></span>
-                <span>Summer 2024</span>
-            </p>
-            <p>  - Implemented VBA macros and Python for workplace automation</p>
+        <div class="section-title">
+            <a class="a" href="#004" onclick="highlightSection('004')"> Projects </a>
         </div>
 
-        <br />
-
         <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">OpenAI Discord API ChatBot</span> | Personal Project</span>
-                <span class="spacer"></span>
-                <span>Summer 2021</span>
-            </p>
-            <p>  - Implemented <span class="bold">GPT-3 API</span> to create a Discord chatbot and sentiment analysis; <a href="files/1Z03 FeelingBot Report.pdf" target="_blank">Report</a></p>
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Vulnerability Playtest</span></span>
+                    <span class="spacer"></span>
+                    <span>Summer 2026</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">Personal Project</span>
+                    <span class="spacer"></span>
+                    <span class="italic"><a href="https://github.com/John-Popovici/vulnerability-playtest" target="_blank">GitHub</a></span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">Demonstration of vulnerability primitives such as Buffer Overflow and Injection Attacks.</p>
+            <p class="sub-bullet">Implemented functional Proof-of-Concepts for CVEs (eg. CopyFail) to explain exploit mechanics.</p>
         </div>
 
-        <br />
+        <div class="entry">
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Microkernel Implementation</span></span>
+                    <span class="spacer"></span>
+                    <span>Spring 2026</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">Group Project</span>
+                    <span class="spacer"></span>
+                    <span class="italic"><a href="https://github.com/John-Popovici/Microkernel_Implementation" target="_blank">GitHub</a></span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">Architected a Priority Scheduler and Inter-Process Communication (IPC) on a NOVA skeleton.</p>
+        </div>
 
         <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Space;Raze Algorithm Competing Game</span> | Group Project</span>
-                <span class="spacer"></span>
-                <span>Winter 2019</span>
-            </p>
-            <p>  - Developed a <span class="bold">Java</span>-based instructional physics game for battling algorithms</p>
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Customizable Neural Network from Scratch</span></span>
+                    <span class="spacer"></span>
+                    <span>Summer 2025</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">Personal Project</span>
+                    <span class="spacer"></span>
+                    <span class="italic"><a href="https://github.com/John-Popovici/scratch-neural-network?tab=readme-ov-file#custom-neural-network-from-scratch" target="_blank">GitHub</a></span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">Built a modular <span class="bold">Neural Network</span> engine using <span class="bold">Python and NumPy</span> for visualizing training.</p>
+            <p class="sub-bullet">Conducted comparative benchmarking against TensorFlow and implemented optimizations.</p>
+        </div>
+
+        <div class="entry">
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Personal Website</span></span>
+                    <span class="spacer"></span>
+                    <span>March 2025</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">Personal Project</span>
+                    <span class="spacer"></span>
+                    <span class="italic"><a href="https://john-popovici.github.io/" target="_blank">Website</a>; <a href="https://github.com/John-Popovici/John-Popovici.github.io" target="_blank">GitHub</a></span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">Created website using raw HTML, JavaScript, CSS on GitHub Pages and Resume in Latex.</p>
+        </div>
+
+        <div class="entry">
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Dice Duels: 3D Physics Online Dice Game</span></span>
+                    <span class="spacer"></span>
+                    <span>Sept 2024 - Apr 2025</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">Group Project</span>
+                    <span class="spacer"></span>
+                    <span class="italic"><a href="https://github.com/John-Popovici/duel-of-the-eights" target="_blank">GitHub</a></span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">Implemented custom dice game using <span class="bold">Godot, Git Version Control, and GitHub Actions CI/CD</span>.</p>
+            <p class="sub-bullet">Documented engineering process and management compiled as Latex documentation.</p>
+        </div>
+
+        <div class="entry">
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Custom Microsoft Office Automation</span></span>
+                    <span class="spacer"></span>
+                    <span>Summer 2024</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">Commissioned Project</span>
+                    <span class="spacer"></span>
+                    <span class="italic"></span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">Implemented <span class="bold">Microsoft Office VBA macros and Python script</span> for workplace automation.</p>
+        </div>
+
+        <div class="entry">
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">OpenAI GPT-3 Discord ChatBot</span></span>
+                    <span class="spacer"></span>
+                    <span>Summer 2024</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">Group Project</span>
+                    <span class="spacer"></span>
+                    <span class="italic"><a href="files/1Z03_FeelingBot_Report.pdf" target="_blank">Report</a></span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">Implemented the <span class="bold">GPT-3 API</span> to develop a specialized Discord chatbot featuring sentiment analysis.</p>
+        </div>
+
+        <div class="entry">
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Space;Raze: Algorithm Competing Game</span></span>
+                    <span class="spacer"></span>
+                    <span>Winter 2019</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">Group Project</span>
+                    <span class="spacer"></span>
+                    <span class="italic"></span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">Developed a Java instructional physics game for battling custom algorithms for learning algorithms.</p>
         </div>
 
     </div>
-
-    <br />
 
     <div id="005" class="block-center section">
-        <span class="bolder"><p><a class="a" href="#005" onclick="highlightSection('005')">[005]</a> Other Highlights</p></span>
-        <p>-----------------------------------------------------------------------------------------</p>
-        
-        <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Student Ambassador & Representative</span> | McMaster Engineering Society</span>
-                <span class="spacer"></span>
-                <span>Sept 2019 - Apr 2022</span>
-            </p>
-            <p>  - Voted representative by student body and awarded <span class="bold">2019-2020 Council Appreciation Award</span></p>
+        <div class="section-title">
+            <a class="a" href="#005" onclick="highlightSection('005')"> Other Highlights </a>
         </div>
-        
-        <br />
 
         <div class="entry">
-            <p class="two-col">
-                <span>* <span class="bold blue">Director of Design & Manufacturing</span> | First Robotics Competition</span>
-                <span class="spacer"></span>
-                <span>Sept 2018 - June 2019</span>
-            </p>
-            <p>  - Worked to found the local FRC team and awarded two <span class="bold">Rookie Team of the Year Awards</span></p>
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Open Source Contributor</span></span>
+                    <span class="spacer"></span>
+                    <span></span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet"><a href="https://github.com/Pivotick/Pivotick" target="_blank"><span class="bold">Pivotick</span></a>: Network graph library developed for tools such as MISP and FlowIntel.</p>
+            <p class="sub-bullet"><a href="https://github.com/lux-ai-factory/aisc" target="_blank"><span class="bold">AISC</span></a>: AI Assessment Sandbox Configurator for evaluating and assessing risks in AI models.</p>
+        </div>
+
+        <div class="entry">
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Hackathon Participant & Mentor</span></span>
+                    <span class="spacer"></span>
+                    <span></span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet"><span class="bold">Mentor</span>: Deltahacks 9 (2023)</p>
+            <p class="sub-bullet"><span class="bold">Participant</span>: hackathon.lu (2026), Bsides (2026), Deltahacks 7 (2021), TOhacks (2021)</p>
+        </div>
+
+        <div class="entry">
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Student Representative & Ambassador</span></span>
+                    <span class="spacer"></span>
+                    <span>Sept 2019 - Apr 2022</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">McMaster Engineering Society</span>
+                    <span class="spacer"></span>
+                    <span class="italic"></span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">Elected by the student body to represent program interests. Awarded <span class="bold">Council Appreciation Award</span>.</p>
+        </div>
+
+        <div class="entry">
+            <div class="heading-block">
+                <span class="heading-bullet">*</span>
+                <div class="heading-rows">
+                <p class="two-col">
+                    <span><span class="bold blue">Director of Design & Manufacturing</span></span>
+                    <span class="spacer"></span>
+                    <span>Sept 2018 - June 2019</span>
+                </p>
+                <p class="two-col">
+                    <span class="italic">First Robotics Competition</span>
+                    <span class="spacer"></span>
+                    <span class="italic"></span>
+                </p>
+                </div>
+            </div>
+            <p class="sub-bullet">Co-founded the local FRC team, leading the group to win two <span class="bold">Rookie Team of the Year Awards</span>.</p>
         </div>
 
     </div>
 
-    <footer>
+    <div id="006" class="block-center section">
+        <div class="section-title">
+            <a class="a" href="#006" onclick="highlightSection('006')"> Skills </a>
+        </div>
+
+        <p class="skill"><span class="label">Languages:</span><span>English (Native), Romanian (Native), French (Intermediate)</span></p>
+        <p class="skill"><span class="label">Programming:</span><span>Python, Java, SQL, C/C++, PHP, JavaScript, Perl, Ruby, Bash, VBA, Verilog, GDScript</span></p>
+        <p class="skill"><span class="label">Tools:</span><span>Linux, MS Office, Git, Perforce, CI/CD, Jira, Regex, GDB, APKtool, Jadx, Wireshark</span></p>
+        <p class="skill"><span class="label">ML & AI:</span><span>Neural Network Architecture, TensorFlow, Pytorch, Numpy, ML Safety Metrics, Matlab</span></p>
+        <p class="skill"><span class="label">Cybersecurity:</span><span>Software Vulnerabilities, MISP, Risk Management, Threat Intelligence, Data Recovery</span></p>
+
+    </div>
+
+    <footer class="centered">
         <br />
         <br />
-        <br />
-        <br />
-        <br />
+        <p aria-label="John Popovici" class="ascii-art">
+        .        *           _    .  +   .           .               .             *                 
+             .     .   _ *  / \_ *  /'\_      ,  *        *   /\'__        *      .       *          
+     *         /'\    / \  /,   \  /    \,   ((        .    _/  /  \  *'.    .\      .          .    
+         ._   .  '\_,|.  \/./\  /\/ :' __ \_  `          _^/  ^/    `--.    /  \_.                   
+  .   ^\/  \./;     \   ^/    \/  \  _/  \-'\      *    /.' ^_   ,_   .'\ ,|^  / \.,\         _      
+     / `\   \  '_/^  \ .\  .-   `. \/     \ /==~=-=~=-=-;.  _/ \ -. `_/   \ `;    \/ \_,-/\_,/ \     
+  ._/`\.       /   \.-'  `-.__ ^   / .-'.--\ =-=~_=-=~=^/  _ `--./ .-'  `-    .,-/ ^,_\   ;\.   \,.  
+./      '-,. ./  ,,` /  .,    `.  / /    \  `.~-^=-=~=^=.-'      '-._ `._   ,/     /  \.     \     \.
+---------------------------------------------|=~==~-==~|---------------------------------------------
+        </p>
     </footer>
 
 </body>
 
 </html>
-
-
-
-
-
-
