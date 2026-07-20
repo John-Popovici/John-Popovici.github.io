@@ -1,0 +1,263 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{multicol}
+\usepackage{array}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-1.3cm}
+\addtolength{\evensidemargin}{-1cm}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1.2cm}
+\addtolength{\textheight}{2.5cm}
+
+\definecolor{customBlue}{HTML}{4472c4}
+
+\urlstyle{rm}
+\hypersetup{
+    colorlinks=false,
+    pdftitle={John Popovici Resume},
+}
+
+%\usepackage{notomath}
+%\usepackage[T1]{fontenc}
+
+\raggedbottom
+%\raggedright
+\setlength{\tabcolsep}{0in}
+\renewcommand{\labelitemii}{$\circ$}
+
+% ===== Custom =====
+
+% Section
+\titleformat{\section}{
+	\vspace{-8pt}\scshape\raggedright\Large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+% Heading formats
+\newcommand{\headingFour}[4]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{\large\textcolor{customBlue}{#1}} & {#2} \\
+	\textit{#3} & \textit{#4} \\
+	\end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\headingTwo}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{\large\textcolor{customBlue}{#1}} & {#2} \\
+	\end{tabular*}\vspace{-5pt}
+}
+
+% Skill format
+\newcommand{\skill}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{>{\raggedright\arraybackslash}p{3cm}@{}l}
+	\textbf{#1}: & {#2} \\
+	\end{tabular*}\vspace{-5pt}
+}
+
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{multicols}{2}
+\textbf{\Huge\textit{\textcolor{customBlue}{John Popovici}}}
+\columnbreak
+
+\raggedleft
+\href{mailto:john.pop@hotmail.com}{john.pop@hotmail.com}\\
+\href{https://john-popovici.github.io/}{john-popovici.github.io}\\
+\href{https://www.linkedin.com/in/john-popovici/}{linkedin.com/in/john-popovici}\\
+\end{multicols}
+\vspace{-5pt}
+
+% ===== About Me =====
+
+Cybersecurity and Software Engineering masters student with a background in software development, high-performance automated testing, and machine learning integration. Proven ability to contribute to open-source tools and deliver technical solutions in fast-paced industrial environments and academic settings.
+
+% ===== Education and Training =====
+
+\section{Education}
+\begin{itemize}[leftmargin=*]
+\headingFour{Master in Cybersecurity and Cyber Defence}{Class of 2027}
+{University of Luxembourg - Luxembourg}{18.9 / 20.0 GPA}
+\begin{itemize}
+	\item{ENISA EU Cybersecurity Skills Framework (ECSF)}\vspace{-2pt}
+\end{itemize}\vspace{-5pt}
+{\scriptsize\textit{\footnotesize{\textbf{Courses:} Software Vulnerabilities, Intelligence Structured Analysis, AI and Cybersecurity, Security of Mobiles, Microkernel Based Systems, Cyber Policy, Cybersecurity Risk Management, Cybersecurity Tool for Threat Intelligence and Forensics}}}
+
+\headingFour{Bachelor of Software Engineering}{Class of 2025}
+{McMaster University - Canada}{11.5 / 12.0 GPA}
+\begin{itemize}
+	\item{\textbf{Summa Cum Laude}; Principal's Award and University Senate Scholarship}\vspace{-2pt}
+\end{itemize}\vspace{-5pt}
+{\scriptsize\textit{\footnotesize{\textbf{Courses:} Software Design, Software Testing, Computer Networks and Security, Scientific Computation, Databases, Computer Architecture, Information Security, Software Requirements and Security Considerations, Data Structures and Algorithms}}}
+
+\headingFour{Ontario Secondary School Diploma}{Class of 2019}
+{Newmarket High School - Canada}{95.5 / 100.0 GPA}
+\begin{itemize}
+	\item{Awarded Principal's Honour Roll and Academic Distinctions}\vspace{-2pt}
+\end{itemize}
+
+\end{itemize}
+
+% ===== Work Experience =====
+
+\section{Work Experience}
+\begin{itemize}[leftmargin=*]
+\headingFour{Project Developer}{Oct 2025 - Present}
+{University of Luxembourg (SnT SerVal) - Luxembourg}{~}
+\begin{itemize}
+	\item{Enhanced the \href{https://www.uni.lu/snt-en/news/new-open-source-tool-accelerates-testing-for-trustworthy-artificial-intelligence/}{\textbf{Open Source AI Assessment Sandbox Configurator (AISC)}} architecture by developing the plugin interface and full stack, improving framework extensibility for third-party developers.}\vspace{-2pt}
+	\item{Implemented an extensible suite of analysis plugins and 100+ metrics for the \href{https://aifactory.lu/build-and-test/testing-the-solution/ai-sandbox-configurator}{AISC tool}, for automated evaluation of \textbf{AI model Performance, Trustworthiness, Robustness, and more.}}\vspace{-2pt}
+	\item{Architected Python PoC to facilitate seamless interfacing and simplified usage of seven leading foundational tabular ML models within a customized testing environment.}\vspace{-2pt}
+\end{itemize}
+
+\headingFour{Multimedia Textbook Assistant}{Jan 2025 - June 2025}
+{McMaster University - Canada}{~}
+\begin{itemize}
+	\item{Designed and evaluated interactive digital content for an open \href{https://ecampusontario.pressbooks.pub/webdev/}{web development course textbook}.}\vspace{-2pt}
+\end{itemize}
+
+\headingFour{Teaching Assistant}{Sept 2021 - Apr 2025}
+{McMaster University - Canada}{*4 Semesters}
+\begin{itemize}
+	\item{Provided technical instruction, academic guidance, and grading for courses of 1000+ students.}\vspace{-2pt}
+	\item{Specialized in delivering complex concepts in \textbf{Engineering Project Design, Data Structures, Algorithms, and Web Development}.}\vspace{-2pt}
+\end{itemize}
+
+\headingFour{Design Verification \& Automation Developer}{May 2022 - Apr 2023}
+{Advanced Micro Devices (AMD) - Canada}{~}
+\begin{itemize}
+	\item{Maintained and executed automated testing and simulation suite in \textbf{Python, Perl, Ruby, and Bash}, utilizing log analysis to identify and debug faults across 6+ parallel execution versions.}\vspace{-2pt}
+	\item{Optimized data ingestion process by developing automation to parse heterogeneous vendor data.}\vspace{-2pt}
+	\item{Managed \textbf{Perforce Version Control and Jira Issue Tracking} within a production environment.}\vspace{-2pt}
+	\item{Spearheaded the Intern Steering Committee, organizing large-scale \$2500 professional development events for 300+ interns. Collaborated with university partners in charity events to raise over \$4000.}\vspace{-2pt}
+\end{itemize}
+
+\headingFour{Junior Programmer}{May 2021 - Aug 2021}
+{Valor Distributions - Canada}{~}
+\begin{itemize}
+	\item{Developed and performed \textbf{Quality Assurance (QA)} for an inventory management system utilizing \textbf{Vue.js, Laravel, PHP and SQL Databases}.}\vspace{-2pt}
+\end{itemize}
+
+\end{itemize}
+
+\newpage
+
+% ===== Technical Projects =====
+
+\section{Technical Projects}
+\begin{itemize}[leftmargin=*]
+\headingFour{Vulnerability Playtest}{Summer 2026}
+{Personal Project}{\href{https://github.com/John-Popovici/vulnerability-playtest}{GitHub}}
+\begin{itemize}
+	\item{Demonstration of vulnerability primitives such as Buffer Overflow and Injection Attacks.}\vspace{-2pt}
+	\item{Implemented \textbf{functional Proof-of-Concepts for CVEs} (eg. CopyFail) to explain exploit mechanics.}\vspace{-2pt}
+\end{itemize}
+
+\headingFour{Microkernel Implementation}{Spring 2026}
+{Group Project}{\href{https://github.com/John-Popovici/Microkernel_Implementation}{GitHub}}
+\begin{itemize}
+	\item{Architected a Priority Scheduler and Inter-Process Communication (IPC) on a NOVA skeleton.}\vspace{-2pt}
+\end{itemize}
+
+\headingFour{Customizable Neural Network from Scratch}{Summer 2025}
+{Personal Project}{\href{https://github.com/John-Popovici/scratch-neural-network?tab=readme-ov-file\#custom-neural-network-from-scratch}{GitHub}}
+\begin{itemize}
+	\item{Built a modular \textbf{Neural Network} engine using \textbf{Python and NumPy} for visualizing training.}\vspace{-2pt}
+	\item{Conducted comparative benchmarking against TensorFlow and implemented optimizations.}\vspace{-2pt}
+\end{itemize}
+
+\headingFour{Personal Website}{March 2025}
+{Personal Project}{\href{https://john-popovici.github.io/}{Website}; \href{https://github.com/John-Popovici/John-Popovici.github.io}{GitHub}}
+\begin{itemize}
+	\item{Created website using raw HTML, JavaScript, CSS on GitHub Pages and Resume in Latex.}\vspace{-2pt}
+\end{itemize}
+
+\headingFour{Dice Duels: 3D Physics Online Dice Game}{Sept 2024 - Apr 2025}
+{Group Project}{\href{https://github.com/John-Popovici/duel-of-the-eights}{GitHub}}
+\begin{itemize}
+	\item{Implemented custom dice game using \textbf{Godot, Git Version Control, and GitHub Actions CI/CD}.}\vspace{-2pt}
+	\item{Documented engineering process and management compiled as Latex documentation.}\vspace{-2pt}
+\end{itemize}
+
+\headingFour{Custom Microsoft Office Automation}{Summer 2024}
+{Commissioned Project}{~}
+\begin{itemize}
+	\item{Implemented \textbf{Microsoft Office VBA macros and Python script} for workplace automation.}\vspace{-2pt}
+\end{itemize}
+
+\headingFour{OpenAI GPT-3 Discord ChatBot}{Summer 2024}
+{Group Project}{\href{https://john-popovici.github.io/files/1Z03_FeelingBot_Report.pdf}{Report}}
+\begin{itemize}
+	\item{Implemented the \textbf{GPT-3 API} to develop a specialized Discord chatbot featuring sentiment analysis.}\vspace{-2pt}
+\end{itemize}
+
+\headingFour{Space;Raze: Algorithm Competing Game}{Winter 2019}
+{Group Project}{~}
+\begin{itemize}
+	\item{Developed a Java instructional physics game for battling custom algorithms for learning algorithms.}\vspace{-2pt}
+\end{itemize}
+
+\end{itemize}
+
+% ===== Other Highlights =====
+
+\section{Other Highlights}
+\begin{itemize}[leftmargin=*]
+\headingTwo{Open Source Contributor}{~}
+\begin{itemize}
+	\item{\href{https://github.com/Pivotick/Pivotick}{\textbf{Pivotick}}: Network graph library developed for tools such as MISP and FlowIntel.}\vspace{-2pt}
+	\item{\href{https://github.com/lux-ai-factory/aisc}{\textbf{AISC}}: AI Assessment Sandbox Configurator for evaluating and assessing risks in AI models.}\vspace{-2pt}
+\end{itemize}
+
+\headingTwo{Hackathon Participant \& Mentor}{~}
+\begin{itemize}
+	\item{\textbf{Mentor}: Deltahacks 9 (2023)}\vspace{-2pt}
+	\item{\textbf{Participant}: hackathon.lu (2026), Bsides (2026), Deltahacks 7 (2021), TOhacks (2021)}\vspace{-2pt}
+\end{itemize}
+
+\headingFour{Student Representative \& Ambassador}{Sept 2019 - Apr 2022}
+{McMaster Engineering Society}{~}
+\begin{itemize}
+	\item{Elected by the student body to represent program interests. Awarded \textbf{Council Appreciation Award}.}
+\end{itemize}
+
+\headingFour{Director of Design \& Manufacturing}{Sept 2018 - June 2019}
+{First Robotics Competition}{~}
+\begin{itemize}
+	\item{Co-founded the local FRC team, leading the group to win two "Rookie Team of the Year" Awards}\vspace{-2pt}
+\end{itemize}
+
+\end{itemize}
+
+% ===== Skills =====
+
+\section{Skills Summary}
+\begin{itemize}[leftmargin=*]
+	\skill{Languages}{English (Native), Romanian (Native), French (Intermediate)}
+	\skill{Programming}{Python, Java, SQL, C/C++, PHP, JavaScript, Perl, Ruby, Bash, VBA, Verilog, GDScript}
+	\skill{Tools}{Linux, MS Office, Git, Perforce, CI/CD, Jira, Regex, GDB, APKtool, Jadx, Wireshark}
+	\skill{ML \& AI}{Neural Network Architecture, TensorFlow, Pytorch, Numpy, ML Safety Metrics, Matlab}
+	\skill{Cybersecurity}{Software Vulnerabilities, MISP, Risk Management, Threat Intelligence, Data Recovery}
+\end{itemize}
+
+\end{document}
