@@ -47,7 +47,7 @@
 % Section
 \titleformat{\section}{
 	\vspace{-8pt}\scshape\raggedright\Large
-}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+}{}{0em}{}[\color{black}\titlerule \vspace{-1pt}]
 
 % Heading formats
 \newcommand{\headingFour}[4]{
@@ -55,14 +55,14 @@
 	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
 	\textbf{\large\textcolor{customBlue}{#1}} & {#2} \\
 	\textit{#3} & \textit{#4} \\
-	\end{tabular*}\vspace{-5pt}
+	\end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\headingTwo}[2]{
 	\item
 	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
 	\textbf{\large\textcolor{customBlue}{#1}} & {#2} \\
-	\end{tabular*}\vspace{-5pt}
+	\end{tabular*}\vspace{-6pt}
 }
 
 % Skill format
@@ -166,6 +166,12 @@ Cybersecurity and Software Engineering masters student with a background in soft
 
 \section{Technical Projects}
 \begin{itemize}[leftmargin=*]
+\headingFour{Local RAG Document Intelligence System}{Summer 2026}
+{Personal Project}{\href{https://github.com/John-Popovici/doc-rag}{GitHub}}
+\begin{itemize}
+	\item{Developed a terminal-based \textbf{Retrieval-Augmented Generation (RAG)} system to enable private, local interaction with large document corpora using \textbf{ChromaDB and llama.cpp}.}\vspace{-2pt}
+\end{itemize}
+
 \headingFour{Vulnerability Playtest}{Summer 2026}
 {Personal Project}{\href{https://github.com/John-Popovici/vulnerability-playtest}{GitHub}}
 \begin{itemize}
@@ -176,7 +182,7 @@ Cybersecurity and Software Engineering masters student with a background in soft
 \headingFour{Microkernel Implementation}{Spring 2026}
 {Group Project}{\href{https://github.com/John-Popovici/Microkernel_Implementation}{GitHub}}
 \begin{itemize}
-	\item{Architected a Priority Scheduler and Inter-Process Communication (IPC) on a NOVA skeleton.}\vspace{-2pt}
+	\item{Architected a Priority Scheduler and Inter-Process Communication (IPC) on a C/C++ NOVA skeleton.}\vspace{-2pt}
 \end{itemize}
 
 \headingFour{Customizable Neural Network from Scratch}{Summer 2025}
@@ -184,12 +190,6 @@ Cybersecurity and Software Engineering masters student with a background in soft
 \begin{itemize}
 	\item{Built a modular \textbf{Neural Network} engine using \textbf{Python and NumPy} for visualizing training.}\vspace{-2pt}
 	\item{Conducted comparative benchmarking against TensorFlow and implemented optimizations.}\vspace{-2pt}
-\end{itemize}
-
-\headingFour{Personal Website}{March 2025}
-{Personal Project}{\href{https://john-popovici.github.io/}{Website}; \href{https://github.com/John-Popovici/John-Popovici.github.io}{GitHub}}
-\begin{itemize}
-	\item{Created website using raw HTML, JavaScript, CSS on GitHub Pages and Resume in Latex.}\vspace{-2pt}
 \end{itemize}
 
 \headingFour{Dice Duels: 3D Physics Online Dice Game}{Sept 2024 - Apr 2025}
@@ -205,7 +205,7 @@ Cybersecurity and Software Engineering masters student with a background in soft
 	\item{Implemented \textbf{Microsoft Office VBA macros and Python script} for workplace automation.}\vspace{-2pt}
 \end{itemize}
 
-\headingFour{OpenAI GPT-3 Discord ChatBot}{Summer 2024}
+\headingFour{OpenAI GPT-3 Discord ChatBot}{Summer 2021}
 {Group Project}{\href{https://john-popovici.github.io/files/1Z03_FeelingBot_Report.pdf}{Report}}
 \begin{itemize}
 	\item{Implemented the \textbf{GPT-3 API} to develop a specialized Discord chatbot featuring sentiment analysis.}\vspace{-2pt}
@@ -214,7 +214,7 @@ Cybersecurity and Software Engineering masters student with a background in soft
 \headingFour{Space;Raze: Algorithm Competing Game}{Winter 2019}
 {Group Project}{~}
 \begin{itemize}
-	\item{Developed a Java instructional physics game for battling custom algorithms for learning algorithms.}\vspace{-2pt}
+	\item{Developed an instructional \textbf{Java} physics battle simulation for competing in custom algorithm design.}\vspace{-2pt}
 \end{itemize}
 
 \end{itemize}
@@ -256,7 +256,7 @@ Cybersecurity and Software Engineering masters student with a background in soft
 	\skill{Languages}{English (Native), Romanian (Native), French (Intermediate)}
 	\skill{Programming}{Python, Java, SQL, C/C++, PHP, JavaScript, Perl, Ruby, Bash, VBA, Verilog, GDScript}
 	\skill{Tools}{Linux, MS Office, Git, Perforce, CI/CD, Jira, Regex, GDB, APKtool, Jadx, Wireshark}
-	\skill{ML \& AI}{Neural Network Architecture, TensorFlow, Pytorch, Numpy, ML Safety Metrics, Matlab}
+	\skill{ML \& AI}{Neural Network Architecture, TensorFlow, Pytorch, Numpy, ML Safety Metrics, RAG}
 	\skill{Cybersecurity}{Software Vulnerabilities, MISP, Risk Management, Threat Intelligence, Data Recovery}
 \end{itemize}
 

@@ -3,7 +3,7 @@
 * {font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; box-sizing: border-box;}
 
 body {overflow-x: hidden; font-size: 14px;}
-.block-center {max-width: 780px; margin: auto; padding: 0 16px;}
+.block-center {max-width: 750px; margin: auto; padding: 0 16px;}
 .centered {text-align: center;}
 
 p {margin: 0; white-space: pre-wrap;}
